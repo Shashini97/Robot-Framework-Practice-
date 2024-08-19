@@ -7,9 +7,18 @@ ${browser}  chrome
 ${url}  https://testautomationpractice.blogspot.com/
 
 *** Test Cases ***
-Testing Input Boxes
+Testing the form
     open browser    ${url}    ${browser}
     maximize browser window
+    Testing Input Boxes
+    Testing Radio Buttons
+    Testing checkboxes
+    Testing dropdown list
+    Testing list box
+    close browser
+
+*** Keywords ***
+Testing Input Boxes
     input text  id:name     Shashini
     input text  id:email     test@test.com
     input text  id:phone     +956789643
@@ -24,8 +33,16 @@ Testing checkboxes
 
     unselect checkbox   sunday
 
+Testing dropdown list
+    select from list by label   country     Germany
+    sleep   3
+    select from list by value   country     japan
+    sleep   3
+    select from list by index   country     9
 
-    sleep   5
-    close browser
-
-*** Keywords ***
+Testing list box
+    select from list by index   colors     0
+    select from list by label   colors     White
+    sleep   3
+    unselect from list by value     colors     red
+    sleep   3

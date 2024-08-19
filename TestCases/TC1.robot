@@ -19,3 +19,4 @@ loginToTheApplication
     input text  id:Email    test@test.com
     input text  id:Password     Test@123
     click element   xpath://button[contains(text(),'Log in')]
+
