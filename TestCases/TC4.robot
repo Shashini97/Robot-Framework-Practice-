@@ -24,6 +24,7 @@ Testing the registration
     input text  id:Password     Test@123
     input text  id:ConfirmPassword  Test@123
 #    ${speed}=   get selenium speed
+
 #    log to console   ${speed}
     close browser
 
