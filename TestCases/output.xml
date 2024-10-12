@@ -1,59 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.10.11 on win32)" generated="2024-10-12T11:55:23.296864" rpa="false" schemaversion="5">
-<suite id="s1" name="TC7" source="C:\Users\Asus\PycharmProjects\robortFramework_Practice\TestCases\TC7.robot">
-<test id="s1-t1" name="Testing frames" line="9">
+<robot generator="Robot 7.0.1 (Python 3.10.11 on win32)" generated="2024-10-12T12:51:43.907981" rpa="false" schemaversion="5">
+<suite id="s1" name="TC9" source="C:\Users\Asus\PycharmProjects\robortFramework_Practice\TestCases\TC9.robot">
+<test id="s1-t1" name="MultipleBrowserTest" line="8">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-10-12T11:55:23.629519" level="INFO">Opening browser 'chrome' to base url 'https://www.hyrtutorials.com/p/frames-practice.html'.</msg>
-<arg>${url}</arg>
+<msg time="2024-10-12T12:51:44.282422" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<arg>https://www.google.com/</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-10-12T11:55:23.629519" elapsed="12.756468"/>
+<status status="PASS" start="2024-10-12T12:51:44.282422" elapsed="3.388170"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-12T12:51:47.670592" elapsed="0.080088"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-10-12T11:55:46.389969" level="INFO">Slept 10 seconds.</msg>
-<arg>10</arg>
+<msg time="2024-10-12T12:51:50.763243" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-10-12T11:55:36.385987" elapsed="10.003982"/>
+<status status="PASS" start="2024-10-12T12:51:47.750680" elapsed="3.012563"/>
 </kw>
-<kw name="Select Frame" owner="SeleniumLibrary">
-<msg time="2024-10-12T11:55:46.393379" level="INFO">Selecting frame 'xpath://iframe[@id='frm1']'.</msg>
-<arg>xpath://iframe[@id='frm1']</arg>
-<doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<status status="PASS" start="2024-10-12T11:55:46.391076" elapsed="0.150365"/>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-12T12:51:50.763243" level="INFO">Opening browser 'chrome' to base url 'https://www.bing.com/'.</msg>
+<arg>https://www.bing.com/</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-12T12:51:50.763243" elapsed="2.802005"/>
 </kw>
-<kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-10-12T11:55:46.541441" level="INFO">Clicking link 'link:HOME'.</msg>
-<arg>link:HOME</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-12T11:55:46.541441" elapsed="0.919674"/>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-12T12:51:53.566598" elapsed="0.061234"/>
 </kw>
-<kw name="Unselect Frame" owner="SeleniumLibrary">
-<doc>Sets the main frame as the current frame.</doc>
-<status status="PASS" start="2024-10-12T11:55:47.461937" elapsed="0.002697"/>
+<kw name="Switch Browser" owner="SeleniumLibrary">
+<arg>1</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="PASS" start="2024-10-12T12:51:53.628850" elapsed="0.000000"/>
 </kw>
-<kw name="Select Frame" owner="SeleniumLibrary">
-<msg time="2024-10-12T11:55:47.464634" level="INFO">Selecting frame 'xpath://iframe[@id='frm2']'.</msg>
-<arg>xpath://iframe[@id='frm2']</arg>
-<doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<status status="PASS" start="2024-10-12T11:55:47.464634" elapsed="0.086827"/>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2024-10-12T12:51:53.644963" level="INFO">${title1} = Google</msg>
+<var>${title1}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-10-12T12:51:53.628850" elapsed="0.016113"/>
 </kw>
-<kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-10-12T11:55:47.556800" level="INFO">Clicking link 'link:HOME'.</msg>
-<arg>link:HOME</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-12T11:55:47.556800" elapsed="1.562335"/>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${title1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-10-12T12:51:53.644963" elapsed="0.000000"/>
 </kw>
-<kw name="Unselect Frame" owner="SeleniumLibrary">
-<doc>Sets the main frame as the current frame.</doc>
-<status status="PASS" start="2024-10-12T11:55:49.119135" elapsed="0.005407"/>
+<kw name="Switch Browser" owner="SeleniumLibrary">
+<arg>2</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="PASS" start="2024-10-12T12:51:53.644963" elapsed="0.000000"/>
 </kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-10-12T11:55:49.131972" elapsed="2.385277"/>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2024-10-12T12:51:53.691536" level="INFO">${title2} = Bing</msg>
+<var>${title2}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-10-12T12:51:53.644963" elapsed="0.046573"/>
 </kw>
-<status status="PASS" start="2024-10-12T11:55:23.626313" elapsed="27.890936"/>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${title2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-10-12T12:51:53.691536" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-12T12:51:56.699178" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-12T12:51:53.691536" elapsed="3.012823"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-10-12T12:51:56.706561" elapsed="12.905360"/>
+</kw>
+<status status="PASS" start="2024-10-12T12:51:44.282422" elapsed="25.329499"/>
 </test>
-<status status="PASS" start="2024-10-12T11:55:23.296864" elapsed="28.220385"/>
+<status status="PASS" start="2024-10-12T12:51:43.907981" elapsed="25.703940"/>
 </suite>
 <statistics>
 <total>
@@ -62,7 +83,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="TC7">TC7</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC9">TC9</stat>
 </suite>
 </statistics>
 <errors>
