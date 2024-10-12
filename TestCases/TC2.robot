@@ -1,5 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
+
 *** Variables ***
 ${browser}  chrome
 ${url}  https://demowebshop.tricentis.com/

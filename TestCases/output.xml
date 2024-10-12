@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.10.11 on win32)" generated="2024-10-12T11:55:23.296864" rpa="false" schemaversion="5">
+<suite id="s1" name="TC7" source="C:\Users\Asus\PycharmProjects\robortFramework_Practice\TestCases\TC7.robot">
+<test id="s1-t1" name="Testing frames" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-12T11:55:23.629519" level="INFO">Opening browser 'chrome' to base url 'https://www.hyrtutorials.com/p/frames-practice.html'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-12T11:55:23.629519" elapsed="12.756468"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-12T11:55:46.389969" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-12T11:55:36.385987" elapsed="10.003982"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2024-10-12T11:55:46.393379" level="INFO">Selecting frame 'xpath://iframe[@id='frm1']'.</msg>
+<arg>xpath://iframe[@id='frm1']</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2024-10-12T11:55:46.391076" elapsed="0.150365"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-10-12T11:55:46.541441" level="INFO">Clicking link 'link:HOME'.</msg>
+<arg>link:HOME</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-12T11:55:46.541441" elapsed="0.919674"/>
+</kw>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" start="2024-10-12T11:55:47.461937" elapsed="0.002697"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2024-10-12T11:55:47.464634" level="INFO">Selecting frame 'xpath://iframe[@id='frm2']'.</msg>
+<arg>xpath://iframe[@id='frm2']</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2024-10-12T11:55:47.464634" elapsed="0.086827"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-10-12T11:55:47.556800" level="INFO">Clicking link 'link:HOME'.</msg>
+<arg>link:HOME</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-12T11:55:47.556800" elapsed="1.562335"/>
+</kw>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" start="2024-10-12T11:55:49.119135" elapsed="0.005407"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-12T11:55:49.131972" elapsed="2.385277"/>
+</kw>
+<status status="PASS" start="2024-10-12T11:55:23.626313" elapsed="27.890936"/>
+</test>
+<status status="PASS" start="2024-10-12T11:55:23.296864" elapsed="28.220385"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC7">TC7</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -8,7 +8,7 @@ ${url}  https://demo.nopcommerce.com/
 *** Test Cases ***
 LoginTest
     open browser    ${url}  ${browser}
-    sleep   10
+    sleep   20
     loginToTheApplication
     close browser
 
