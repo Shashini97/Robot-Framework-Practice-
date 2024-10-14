@@ -1,82 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.10.11 on win32)" generated="2024-10-14T12:02:17.409683" rpa="false" schemaversion="5">
-<suite id="s1" name="TC10" source="C:\Users\Asus\PycharmProjects\robortFramework_Practice\TestCases\TC10.robot">
-<test id="s1-t1" name="NavigationTest" line="7">
+<robot generator="Robot 7.0.1 (Python 3.10.11 on win32)" generated="2024-10-14T12:37:00.082800" rpa="false" schemaversion="5">
+<suite id="s1" name="TC11" source="C:\Users\Asus\PycharmProjects\robortFramework_Practice\TestCases\TC11.robot">
+<test id="s1-t1" name="LoginTC" line="7">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-10-14T12:02:17.754118" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
-<arg>https://www.google.com/</arg>
+<msg time="2024-10-14T12:37:00.624450" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-10-14T12:02:17.754118" elapsed="3.414749"/>
+<status status="PASS" start="2024-10-14T12:37:00.624450" elapsed="4.645968"/>
 </kw>
-<kw name="Get Location" owner="SeleniumLibrary">
-<msg time="2024-10-14T12:02:21.185311" level="INFO">${loc} = https://www.google.com/</msg>
-<var>${loc}</var>
-<doc>Returns the current browser window URL.</doc>
-<status status="PASS" start="2024-10-14T12:02:21.168867" elapsed="0.016444"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${loc}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-10-14T12:02:21.185311" elapsed="0.000000"/>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-14T12:37:05.271813" elapsed="0.052970"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-10-14T12:02:24.206035" level="INFO">Slept 3 seconds.</msg>
-<arg>3</arg>
+<msg time="2024-10-14T12:37:09.329046" level="INFO">Slept 4 seconds.</msg>
+<arg>4</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-10-14T12:02:21.193336" elapsed="3.013156"/>
+<status status="PASS" start="2024-10-14T12:37:05.324783" elapsed="4.004263"/>
 </kw>
-<kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-10-14T12:02:24.206492" level="INFO">Opening url 'https://www.bing.com/'</msg>
-<arg>https://www.bing.com/</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-10-14T12:02:24.206492" elapsed="0.517986"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-14T12:37:09.329046" level="INFO">Typing text 'Admin' into text field 'name: username'.</msg>
+<arg>name: username</arg>
+<arg>Admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-14T12:37:09.329046" elapsed="0.310980"/>
 </kw>
-<kw name="Get Location" owner="SeleniumLibrary">
-<msg time="2024-10-14T12:02:24.736423" level="INFO">${loc} = https://www.bing.com/</msg>
-<var>${loc}</var>
-<doc>Returns the current browser window URL.</doc>
-<status status="PASS" start="2024-10-14T12:02:24.724478" elapsed="0.011945"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-14T12:37:09.641037" level="INFO">Typing text 'admin123' into text field 'name:password'.</msg>
+<arg>name:password</arg>
+<arg>admin123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-14T12:37:09.641037" elapsed="0.267068"/>
 </kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${loc}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-10-14T12:02:24.736423" elapsed="0.008454"/>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2024-10-14T12:37:10.071312" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Logo.png"&gt;&lt;img src="../Logo.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>xpath://*[@id="app"]/div[1]/div/div[1]/div/div[1]/img</arg>
+<arg>C:/Users/Asus/PycharmProjects/robortFramework_Practice/Logo.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2024-10-14T12:37:09.908105" elapsed="0.163207"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-10-14T12:02:27.747986" level="INFO">Slept 3 seconds.</msg>
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-10-14T12:02:24.744877" elapsed="3.003109"/>
-</kw>
-<kw name="Go Back" owner="SeleniumLibrary">
-<doc>Simulates the user clicking the back button on their browser.</doc>
-<status status="PASS" start="2024-10-14T12:02:27.747986" elapsed="0.665135"/>
-</kw>
-<kw name="Get Location" owner="SeleniumLibrary">
-<msg time="2024-10-14T12:02:28.430779" level="INFO">${loc} = https://www.google.com/</msg>
-<var>${loc}</var>
-<doc>Returns the current browser window URL.</doc>
-<status status="PASS" start="2024-10-14T12:02:28.416893" elapsed="0.013886"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${loc}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-10-14T12:02:28.432293" elapsed="0.000000"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-10-14T12:02:31.437772" level="INFO">Slept 3 seconds.</msg>
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-10-14T12:02:28.432293" elapsed="3.005707"/>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-10-14T12:37:10.422407" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../LoginTC.png"&gt;&lt;img src="../LoginTC.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>C:/Users/Asus/PycharmProjects/robortFramework_Practice/LoginTC.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-10-14T12:37:10.071312" elapsed="0.352127"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-10-14T12:02:31.438000" elapsed="2.298928"/>
+<status status="PASS" start="2024-10-14T12:37:10.423944" elapsed="2.185889"/>
 </kw>
-<status status="PASS" start="2024-10-14T12:02:17.754118" elapsed="15.982810"/>
+<status status="PASS" start="2024-10-14T12:37:00.618310" elapsed="11.991523"/>
 </test>
-<status status="PASS" start="2024-10-14T12:02:17.417941" elapsed="16.318987"/>
+<status status="PASS" start="2024-10-14T12:37:00.098644" elapsed="12.511189"/>
 </suite>
 <statistics>
 <total>
@@ -85,7 +61,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="TC10">TC10</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC11">TC11</stat>
 </suite>
 </statistics>
 <errors>
